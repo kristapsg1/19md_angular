@@ -31,7 +31,7 @@ export class CardsComponent implements OnInit {
   deleteCar(id: number) {
     this.service.DELETE(id).subscribe({
       next: (data) => {
-        console.log('Car deleted successfully', data);
+        console.log('Car deleted successfullyyy', data);
         this.getAllCars();
       },
     });
