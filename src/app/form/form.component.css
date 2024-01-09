@@ -1,0 +1,43 @@
+.title {
+  justify-content: center;
+  display: flex;
+}
+
+.pg-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+  border: 3px solid gray;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 15px;
+  background-color: rgb(3, 133, 3);
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+

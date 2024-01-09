@@ -1,0 +1,25 @@
+{
+  "cars": [
+    {
+      "id": 7,
+      "picture": "https://www.autoblitz.lv/uploads/2022/07/jaunaastra_order133437-1080x616.png",
+      "brand": "Opel astra",
+      "year": "2024",
+      "about": "The Opel Astra, a compact car, has consistently impressed drivers with its dynamic performance and sleek design. Renowned for its efficient fuel economy and advanced safety features, the Astra offers a comfortable and enjoyable driving experience. Its well-appointed interior boasts modern technology and spaciousness, making it a practical choice for both urban commuting and long journeys. With a reputation for reliability and innovation, the Opel Astra continues to be a popular choice among those seeking a stylish and practical compact car."
+    },
+    {
+      "id": 8,
+      "picture": "https://crdms.images.consumerreports.org/c_lfill,w_470,q_auto,f_auto/prod/cars/cr/car-versions/11774-2019-audi-a8-3-0t",
+      "brand": "Audi A8",
+      "year": "2020",
+      "about": "The Audi A8, a luxury flagship sedan, epitomizes elegance and cutting-edge technology. Renowned for its exquisite craftsmanship and attention to detail, the A8 seamlessly blends performance with opulence. Featuring a refined interior, state-of-the-art infotainment systems, and advanced driver-assistance technologies, the A8 delivers a sophisticated driving experience. Its powerful engine options and adaptive suspension contribute to a smooth and dynamic ride. As a symbol of automotive excellence, the Audi A8 stands at the pinnacle of luxury and innovation."
+    },
+    {
+      "id": 9,
+      "picture": "https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb6584751091e3d8e88cb10/stills_0640_png/MY2023/52602/52602_st0640_116.png",
+      "brand": "Mercedes-AMG G",
+      "year": "2018",
+      "about": "The Mercedes-Benz G-Class AMG, an epitome of rugged luxury, seamlessly merges off-road capability with high-performance refinement. This iconic SUV boasts a handcrafted AMG engine, delivering exhilarating power and a distinctive exhaust note. With its distinctive boxy design, advanced technology, and lavish interior, the G-Class AMG offers an unmatched blend of style and substance. From city streets to challenging terrains, this vehicle excels in both opulence and off-road prowess, making it an automotive status symbol."
+    }
+  ]
+}

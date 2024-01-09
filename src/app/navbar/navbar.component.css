@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}

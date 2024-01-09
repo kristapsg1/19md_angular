@@ -1,0 +1,60 @@
+<h1 class="title">Showcase</h1>
+<section class="pg-wrapper">
+  <form class="form-wrapper" (ngSubmit)="creatCard()">
+    <div class="form-items">
+      <label for="picture"><strong>Picture:</strong></label>
+      <input
+        type="text"
+        name="picture"
+        class="picture"
+        placeholder="URL"
+        class="input-fields"
+        [(ngModel)]="addcar.picture"
+      />
+    </div>
+
+    <div class="form-items">
+      <label for="brand"><strong>Brand:</strong></label>
+      <input
+        type="text"
+        name="brand"
+        class="brand"
+        placeholder="Brand"
+        class="input-fields"
+        [(ngModel)]="addcar.brand"
+      />
+    </div>
+
+    <div class="form-items">
+      <label for="year"><strong>Year:</strong></label>
+      <input
+        type="text"
+        name="year"
+        class="year"
+        placeholder="Year"
+        class="input-fields"
+        [(ngModel)]="addcar.year"
+      />
+    </div>
+
+    <div class="form-items">
+      <label for="about"><strong>About:</strong></label>
+      <textarea
+        type="text"
+        class="about"
+        name="about"
+        placeholder="About"
+        rows="4"
+        class="input-fields"
+        [(ngModel)]="addcar.about"
+      ></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<div >
+  <app-cards></app-cards>
+</div>
+<br><br><br>

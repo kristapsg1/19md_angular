@@ -1,0 +1,68 @@
+/* All cards */
+
+:host {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  
+}
+
+.cards {
+  border: 1px gray solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  height: 90%;
+  margin-top: 30px;
+  
+}
+
+.button-wrapper {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Single Blog */
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
