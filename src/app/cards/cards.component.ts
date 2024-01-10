@@ -9,7 +9,7 @@ import { CarsInterface } from '../services/api/models/cars-interface';
 })
 export class CardsComponent implements OnInit {
   carsDataArr: CarsInterface[] = [];
-  editSwitch: number | null = null;
+  
 
   constructor(private service: CarsService) {}
 
@@ -27,29 +27,4 @@ export class CardsComponent implements OnInit {
     });
   }
 
-  deleteCar(id: number) {
-    this.service.DELETE(id).subscribe({
-      next: (data) => {
-        console.log('Car deleted successfullyyy', data);
-        this.getAllCars();
-      },
-    });
-  }
-
-  editCar(id: number) {
-    this.editSwitch = id;
-  }
-
-  cancelEdit() {
-    this.editSwitch = null;
-  }
-
-  saveChanges(updateCar: CarsInterface) {
-    this.service.PUT(updateCar.id, updateCar).subscribe({
-      next: (data) => {
-        console.log('Car updated successfully:', data);
-        this.editSwitch = null;
-      },
-    });
-  }
 }

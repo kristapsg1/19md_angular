@@ -14,18 +14,5 @@
   margin-top: 30px;
 }
 
-.button-wrapper {
-  margin-top: auto;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
 
-button {
-  width: fit-content;
-  align-self: center;
-  padding: 10px 15px;
-  border: none;
-  color: white;
-  border-radius: 10px;
-}
+

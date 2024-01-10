@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CarsInterface } from '../services/api/models/cars-interface';
 import { CarsService } from '../services/api/cars/cars.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -16,12 +17,13 @@ export class FormComponent {
     about: '',
   };
 
-  constructor(private service: CarsService) {}
+  constructor(private service: CarsService, private router: Router) {}
 
   creatCard() {
     this.service.POST(this.addcar).subscribe({
       next: (data) => {
         console.log('car added', data);
+        this.router.navigate(['/']);
       },
     });
   }

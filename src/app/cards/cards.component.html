@@ -1,47 +1,11 @@
 <div *ngFor="let car of carsDataArr">
-  <div class="cards" *ngIf="editSwitch !== car.id">
+  <div class="cards"  routerLink="/{{ car.id }}">
     <img src="{{ car.picture }}" alt="" style="width: 280px; height: 180px" />
     <h1>{{ car.brand }}</h1>
     <p>{{ car.year }}</p>
     <p>{{ car.about.slice(0, 150) }}...</p>
-    <div class="button-wrapper">
-      <button
-        (click)="deleteCar(car.id)"
-        type="button"
-        style="background-color: red"
-      >
-        Delete
-      </button>
-      <button
-        (click)="editCar(car.id)"
-        type="button"
-        style="background-color: blue"
-      >
-        Edit
-      </button>
-    </div>
+
   </div>
 
-  <div *ngIf="editSwitch === car.id">
-    <div class="cards">
-      <label for="picture"><strong>Picture:</strong></label>
-      <input [(ngModel)]="car.picture" placeholder="URL" />
-      <label for="brand"><strong>Brand:</strong></label>
-      <input [(ngModel)]="car.brand" placeholder="Brand" />
-      <label for="year"><strong>Year:</strong></label>
-      <input [(ngModel)]="car.year" placeholder="Year" />
-      <label for="about"><strong>About:</strong></label>
-      <textarea [(ngModel)]="car.about" placeholder="About"></textarea>
 
-      <div class="button-wrapper">
-        <button (click)="cancelEdit()" style="background-color: red">
-          Cancel
-        </button>
-
-        <button (click)="saveChanges(car)" style="background-color: blue">
-          Save
-        </button>
-      </div>
-    </div>
-  </div>
 </div>

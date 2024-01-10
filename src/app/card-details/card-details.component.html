@@ -1,1 +1,74 @@
-<app-cards></app-cards>
+<div *ngIf="car">
+  <div *ngIf="editSwitch !== car.id" class="car-wrapper">
+    <div class="pic-and-title">
+      <img src="{{ car.picture }}" alt="" class="pictue-wrapper" />
+      <h2>{{ car.brand }} ({{ car.year }})</h2>
+    </div>
+    <p>{{ car.about }}</p>
+    <div class="button-wrapper">
+      <button
+        (click)="deleteCar(car.id)"
+        type="button"
+        style="background-color: red"
+      >
+        Delete
+      </button>
+      <button
+        (click)="editCar(car.id)"
+        type="button"
+        style="background-color: blue"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+  <div *ngIf="editSwitch === car.id">
+    <div class="car-edit">
+      <div class="edit-wrapper">
+        <div class="form-items">
+          <label for="picture"><strong>Picture:</strong></label>
+          <input
+            class="input-fields"
+            [(ngModel)]="car.picture"
+            placeholder="URL"
+          />
+        </div>
+        <div class="form-items">
+          <label for="brand"><strong>Brand:</strong></label>
+          <input
+            class="input-fields"
+            [(ngModel)]="car.brand"
+            placeholder="Brand"
+          />
+        </div>
+        <div class="form-items">
+          <label for="year"><strong>Year:</strong></label>
+          <input
+            class="input-fields"
+            [(ngModel)]="car.year"
+            placeholder="Year"
+          />
+        </div>
+        <div class="form-items">
+          <label for="about"><strong>About:</strong></label>
+          <textarea
+            rows="6"
+            class="input-fields"
+            [(ngModel)]="car.about"
+            placeholder="About"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="button-wrapper">
+        <button (click)="cancelEdit()" style="background-color: red">
+          Cancel
+        </button>
+
+        <button (click)="saveChanges(car)" style="background-color: blue">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

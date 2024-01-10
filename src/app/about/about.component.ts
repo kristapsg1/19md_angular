@@ -7,6 +7,4 @@ import { CarsService } from '../services/api/cars/cars.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })
-export class AboutComponent {
-  constructor(private service: CarsService) {}
-}
+export class AboutComponent {}

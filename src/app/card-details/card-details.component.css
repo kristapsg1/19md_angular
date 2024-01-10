@@ -1,0 +1,74 @@
+:host {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.car-wrapper {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+}
+
+.pic-and-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pictue-wrapper {
+  width: 400px;
+  height: 300px;
+}
+
+.button-wrapper {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.car-edit {
+  border: 1px solid black;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+}
+
+.edit-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-fields {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  
+}
+
+label{
+    font-size: 30px;
+}
