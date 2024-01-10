@@ -1,9 +1,9 @@
 <div *ngFor="let car of carsDataArr">
   <div class="cards" *ngIf="editSwitch !== car.id">
-    <img (click)="showBrandDetails(car)" src="{{ car.picture }}" alt="" style="width: 280px; height: 180px;"/>
-    <h1 >{{ car.brand }}</h1>
+    <img src="{{ car.picture }}" alt="" style="width: 280px; height: 180px" />
+    <h1>{{ car.brand }}</h1>
     <p>{{ car.year }}</p>
-    <p>{{ car.about.slice(0, 150)}}...</p>
+    <p>{{ car.about.slice(0, 150) }}...</p>
     <div class="button-wrapper">
       <button
         (click)="deleteCar(car.id)"
@@ -42,17 +42,6 @@
           Save
         </button>
       </div>
-    </div>
-  </div>
-
-  <!-- Single  -->
-  <div *ngIf="selectedBrandDetails" class="modal">
-    <div class="modal-content">
-      
-      <h1>{{ selectedBrandDetails.brand }}</h1>
-      <p>{{ selectedBrandDetails.year }}</p>
-      <p>{{ selectedBrandDetails.about }}</p>
-      <button class="close" (click)="hideBrandDetails()">&times;</button>
     </div>
   </div>
 </div>

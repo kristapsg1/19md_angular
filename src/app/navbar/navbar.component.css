@@ -23,3 +23,11 @@
   color: white;
   text-decoration: none;
 }
+
+.plus {
+  border: grey 3px solid;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}

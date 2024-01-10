@@ -10,7 +10,6 @@ import { CarsInterface } from '../services/api/models/cars-interface';
 export class CardsComponent implements OnInit {
   carsDataArr: CarsInterface[] = [];
   editSwitch: number | null = null;
-  selectedBrandDetails: CarsInterface | null = null;
 
   constructor(private service: CarsService) {}
 
@@ -52,13 +51,5 @@ export class CardsComponent implements OnInit {
         this.editSwitch = null;
       },
     });
-  }
-
-  showBrandDetails(brandDetails: CarsInterface): void {
-    this.selectedBrandDetails = brandDetails;
-  }
-
-  hideBrandDetails(): void {
-    this.selectedBrandDetails = null;
   }
 }

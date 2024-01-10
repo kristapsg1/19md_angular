@@ -26,4 +26,8 @@ export class CarsService {
       updateCar
     );
   }
+
+  GETbyId(id: number) {
+    return this.http.get<CarsInterface>(`http://localhost:3000/cars/${id}`);
+  }
 }

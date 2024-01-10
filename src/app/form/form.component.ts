@@ -22,10 +22,7 @@ export class FormComponent {
     this.service.POST(this.addcar).subscribe({
       next: (data) => {
         console.log('car added', data);
-        window.location.reload();
       },
     });
   }
-
-  
 }
