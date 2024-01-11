@@ -2,7 +2,10 @@
   <div *ngIf="editSwitch !== car.id" class="car-wrapper">
     <div class="pic-and-title">
       <img src="{{ car.picture }}" alt="" class="pictue-wrapper" />
-      <h2>{{ car.brand }} ({{ car.year }})</h2>
+      <div class="pic-and-year">
+        <h2>{{ car.brand }} </h2>
+        <h2>({{ car.year }})</h2>
+      </div>
     </div>
     <p>{{ car.about }}</p>
     <div class="button-wrapper">

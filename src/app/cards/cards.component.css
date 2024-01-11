@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -12,7 +13,11 @@
   word-wrap: break-word;
   height: 90%;
   margin-top: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
 }
 
-
-
+.cards:hover {
+  transform: scale(1.1);
+}

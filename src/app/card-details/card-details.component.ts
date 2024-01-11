@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CarsService } from '../services/api/cars/cars.service';
 import { CarsInterface } from '../services/api/models/cars-interface';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-card-details',
@@ -13,7 +14,12 @@ export class CardDetailsComponent implements OnInit {
   editSwitch: number | null = null;
   originalCar: CarsInterface = {} as CarsInterface;
 
-  constructor(private route: ActivatedRoute, private service: CarsService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private service: CarsService,
+    private router: Router,
+    private popUp: MatSnackBar
+  ) {}
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
@@ -25,10 +31,20 @@ export class CardDetailsComponent implements OnInit {
     });
   }
 
+  popUpMessage(message: string, action: string) {
+    this.popUp.open(message, action, {
+      duration: 100000,
+      verticalPosition: 'top',
+      panelClass: ['custom'],
+    });
+  }
+
   deleteCar(id: number) {
     this.service.DELETE(id).subscribe({
       next: (data) => {
-        console.log('Car deleted successfullyyy', data);
+        console.log('Car deleted successfully', data);
+        this.router.navigate(['/']);
+        this.popUpMessage('Car Deleted!', 'close');
       },
     });
   }
@@ -47,6 +63,7 @@ export class CardDetailsComponent implements OnInit {
       next: (data) => {
         console.log('Car updated successfully:', data);
         this.editSwitch = null;
+        this.popUpMessage('Car edited!', 'close');
       },
     });
   }

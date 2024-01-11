@@ -1,11 +1,8 @@
 <div *ngFor="let car of carsDataArr">
-  <div class="cards"  routerLink="/{{ car.id }}">
+  <div class="cards" routerLink="/{{ car.id }}">
     <img src="{{ car.picture }}" alt="" style="width: 280px; height: 180px" />
     <h1>{{ car.brand }}</h1>
     <p>{{ car.year }}</p>
     <p>{{ car.about.slice(0, 150) }}...</p>
-
   </div>
-
-
 </div>

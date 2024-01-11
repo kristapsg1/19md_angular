@@ -4,19 +4,33 @@
   margin-top: 30px;
 }
 
+h2{
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+}
+
 .car-wrapper {
-  border: 1px solid black;
+  border: 3px solid black;
   width: 100%;
   max-width: 800px;
   display: flex;
   flex-direction: column;
-  padding: 50px 40px;
+  padding: 40px 30px;
+  border-radius: 20px;
 }
 
 .pic-and-title {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.pic-and-year{
+  display: flex;
+  gap: 10px;
 }
 
 .pictue-wrapper {
@@ -27,7 +41,7 @@
 .button-wrapper {
   margin-top: 30px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -38,14 +52,16 @@ button {
   border: none;
   color: white;
   border-radius: 10px;
+  font-size: 30px;
 }
 
 .car-edit {
-  border: 1px solid black;
+  border: 3px solid black;
   width: 800px;
   display: flex;
   flex-direction: column;
   padding: 50px 40px;
+  border-radius: 20px;
 }
 
 .edit-wrapper {

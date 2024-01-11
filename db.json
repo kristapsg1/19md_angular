@@ -9,17 +9,59 @@
     },
     {
       "id": 8,
-      "picture": "https://purepng.com/public/uploads/large/purepng.com-red-mercedes-benz-cla-carcarvehicletransportmercedes-benz-961524651490bxarm.png",
+      "picture": "https://pngimg.com/d/mercedes_PNG80199.png",
       "brand": "Mercedes E-Class",
       "year": "2018",
-      "about": "The Mercedes E-Class epitomizes elegance and innovation in the automotive world. Renowned for its sophisticated design, advanced safety features, and luxurious interiors, the E-Class seamlessly marries comfort and performance. With a range of engine options and cutting-edge technology, it stands as a symbol of refined driving experience and modern luxury."
+      "about": "The Mercedes E-Class, epitomizing luxury and performance, stands as a pinnacle in automotive engineering. Renowned for its sleek design, advanced technology, and unparalleled comfort, the E-Class seamlessly combines style with functionality. The spacious and opulent interior, coupled with cutting-edge features like the MBUX infotainment system and advanced driver-assistance systems, ensures a sophisticated driving experience. With a range of powerful engines and dynamic handling, the Mercedes E-Class continues to set the standard for executive sedans, embodying the perfect blend of elegance and innovation."
     },
     {
       "id": 9,
-      "picture": "https://hdpng.com/images/audi-png-audi-png-file-1024.png",
-      "brand": "Audi A8",
+      "picture": "https://www.bmw.lv/content/dam/bmw/common/all-models/m-series/m8-gran-coupe/2022/navigation/bmw-m8-competition-gran-coupe-modelfinder.png",
+      "brand": "BMW M6",
+      "year": "2020",
+      "about": "The BMW M6 is a high-performance grand tourer that encapsulates the essence of the renowned M series. Combining luxurious comfort with potent athleticism, the M6 features a powerful engine, typically a twin-turbocharged V8, delivering exhilarating performance. Its aggressive styling, characterized by distinctive M design elements, accentuates its sporty persona. The M6 boasts advanced technology, including customizable driving modes and innovative infotainment, ensuring a harmonious blend of speed and sophistication. With precise handling and a distinctive exhaust note, the BMW M6 exemplifies the marriage of opulence and driving dynamism."
+    },
+    {
+      "id": 10,
+      "picture": "https://www.hondawess.lv/wp-content/uploads/sites/2/23YM_Civic_SPORT_EU_R_565M_f34_stu-754x424.png",
+      "brand": "Honda Civic",
       "year": "2015",
-      "about": "The Audi A8 represents the pinnacle of Audi's luxury sedan lineup. With a blend of opulent design, advanced technology, and potent performance, it offers a serene driving experience. The A8 boasts innovative features like AI-driven suspension and a luxurious, tech-forward interior, making it a paragon of automotive excellence."
+      "about": "The Honda Civic, a perennial favorite in the compact car segment, is celebrated for its reliability, fuel efficiency, and versatile design. Renowned for its practicality, the Civic offers a comfortable ride and efficient use of space within a sleek and aerodynamic exterior. With a range of engine options, from fuel-efficient to sportier models, the Civic caters to diverse preferences. Known for its innovative features and cutting-edge safety technologies, the Honda Civic consistently delivers a well-rounded driving experience, making it a popular choice among drivers worldwide."
+    },
+    {
+      "id": 11,
+      "picture": "https://mediaservice.audi.com/media/cdb/data/6c8f1910-aa41-45cb-8b49-a3049314c3ce.jpg",
+      "brand": "Audi A6",
+      "year": "2021",
+      "about": "The Audi A6 epitomizes luxury and performance in the midsize luxury sedan category. Renowned for its sophisticated design, advanced technology, and meticulous craftsmanship, the A6 combines elegance with dynamic driving capabilities. The interior showcases premium materials, cutting-edge infotainment systems, and spacious comfort, creating a refined driving environment. With a range of powerful engines and Audi's Quattro all-wheel-drive system, the A6 delivers a sporty yet smooth driving experience. The Audi A6 stands as a symbol of style, innovation, and driving excellence within the luxury automotive landscape."
+    },
+    {
+      "id": 13,
+      "picture": "https://www.motortrend.com/uploads/sites/10/2022/05/2021-volkswagen-golf-tsi-5door-hatchback-angular-front.png",
+      "brand": "Wolsvagen Golf 6",
+      "year": "2020",
+      "about": "The Volkswagen Golf 6, part of the iconic Golf series, is a compact car that has garnered acclaim for its versatility and driving dynamics. Launched in the mid-2000s, the Golf 6 retained the series' reputation for quality build and efficient performance. With a range of engines, including fuel-efficient options and sportier variants like the GTI, the Golf 6 appealed to a broad audience. Its timeless design, practicality, and well-crafted interior contributed to the model's popularity, making it a symbol of Volkswagen's commitment to blending style, performance, and everyday functionality."
+    },
+    {
+      "id": 14,
+      "picture": "https://www.toyota.com.sg/showroom/new-models/-/media/542865864f5e498985e9526bc426b094.png",
+      "brand": "Toyota Rav4",
+      "year": "2017",
+      "about": "\nThe Toyota RAV4 stands as a pioneer in the compact SUV segment, known for its reliability, versatility, and practical design. Renowned for its robust build and capable performance, the RAV4 caters to a wide range of drivers. With a spacious and well-appointed interior, the RAV4 offers comfort and convenience, while advanced safety features and fuel efficiency contribute to its popularity. Whether navigating urban streets or venturing off-road, the RAV4's combination of efficiency, safety, and adaptability has made it a consistently popular choice among SUV enthusiasts worldwide."
+    },
+    {
+      "id": 15,
+      "picture": "https://www.motortrend.com/uploads/sites/10/2017/05/2017-bentley-continental-gt-coupe-angular-front.png",
+      "brand": "Bentely Continental GT",
+      "year": "2023",
+      "about": "The Bentley Continental GT is a luxurious grand tourer that embodies the pinnacle of craftsmanship and performance. Renowned for its opulent design and handcrafted details, the Continental GT features a powerful engine, often a W12 or V8, providing exhilarating performance. The sumptuous interior boasts premium materials, intricate finishes, and cutting-edge technology, offering a lavish driving experience. With a perfect blend of elegance and dynamic capability, the Continental GT remains a symbol of automotive luxury, appealing to those who seek uncompromised comfort and prestige in their driving pursuits."
+    },
+    {
+      "id": 16,
+      "picture": "https://cdn.trackdays.co.uk/cdn-cgi/image/format=auto,fit=contain/cars/mitsubishi-evo.png",
+      "brand": "Mitsubishi EVO",
+      "year": "2014",
+      "about": "The Mitsubishi Lancer Evolution, commonly known as the Evo, is a high-performance sports sedan that gained a cult following for its rally-inspired design and thrilling driving dynamics. Renowned for its turbocharged engine, all-wheel-drive system, and precise handling, the Evo became synonymous with rally racing success. With aggressive styling and a focus on performance, the Evo models, particularly the Lancer Evolution VIII and Evolution IX, earned a reputation for their capability on both the road and the track. Though Mitsubishi discontinued the Evo series, its legacy endures as an icon in the realm of high-performance sedans."
     }
   ]
 }

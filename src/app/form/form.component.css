@@ -1,6 +1,8 @@
 .title {
   justify-content: center;
   display: flex;
+  margin-top: 30px;
+  font-size: 40px;
 }
 
 .pg-wrapper {
@@ -41,3 +43,4 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+

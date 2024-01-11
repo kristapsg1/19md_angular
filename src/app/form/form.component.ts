@@ -1,7 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CarsInterface } from '../services/api/models/cars-interface';
 import { CarsService } from '../services/api/cars/cars.service';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-form',
@@ -17,12 +18,24 @@ export class FormComponent {
     about: '',
   };
 
-  constructor(private service: CarsService, private router: Router) {}
+  constructor(
+    private service: CarsService,
+    private router: Router,
+    private popUp: MatSnackBar
+  ) {}
+
+  popUpMessage(message: string, action: string) {
+    this.popUp.open(message, action, {
+      duration: 5000,
+      verticalPosition: 'top',
+    });
+  }
 
   creatCard() {
     this.service.POST(this.addcar).subscribe({
       next: (data) => {
         console.log('car added', data);
+        this.popUpMessage('Hello', 'Close');
         this.router.navigate(['/']);
       },
     });
